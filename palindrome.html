@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome Checker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="palindrome.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Palindrome Checker</h2>
+        <div class="word">
+            <input type="text" id="words" required placeholder="Enter a word or phrase" class="form-control">
+        </div>
+        <br>
+        <div class="checker">
+            <button type="button" onclick="wordchecker()">Check</button>
+        </div>
+        <br>
+        <div id="result"></div>
+    </div>
+    <script>
+        function wordchecker() {
+            const input = document.getElementById('words').value;  // Corrected ID selector
+            if (input === '') {  // Check if the input is empty
+                document.getElementById('result').innerHTML = "Please enter a value.";
+                return;  // Exit the function if input is empty
+            }
+            const cleanedInput = input.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+            const reversedInput = cleanedInput.split('').reverse().join('');
+            
+            let resultText;  // Updated variable name for clarity
+            if (cleanedInput === reversedInput) {
+                resultText = `${input} is a palindrome.`;
+            }
+            else {
+                resultText = `${input} is not a palindrome.`;
+            }
+            
+            document.getElementById('result').innerHTML = resultText;  // Corrected ID selector
+        }
+    </script>
+</body>
+</html>
