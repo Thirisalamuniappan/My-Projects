@@ -1,0 +1,105 @@
+<html>
+    <head> <title>
+        form 1
+    </title>
+    <style>
+        .one{
+            border-style: hidden;
+            background-color:rgb(227, 221, 221);
+            width:40%;
+            height: 50px;
+        }
+        .two{
+            border-style: hidden;
+            background-color:rgb(227, 221, 221);
+            width:40%;
+            height: 50px;
+        }
+        .three{
+            border-style: hidden;
+            background-color:rgb(227, 221, 221);
+            width:100%;
+            height:50px;
+        }
+        .four{
+            border-style: hidden;
+            background-color:rgb(227, 221, 221);
+            width:100%;
+            height:200px;
+        }
+        body{
+            background-image:url(photos/img.jpg); 
+        
+        }
+        form{
+            background-color:white; 
+            width: 50%;
+        }
+        div{
+            display:flex;
+            justify-content: center;
+            padding: 10px; 
+            margin-top: 20px;  
+        }
+        .table{
+            display:flex;
+            justify-content:space-between;   
+            padding-bottom: 10px;
+            
+        }
+        .submit{
+            border-style: hidden;
+            
+            color:white;
+            display:inline-block;
+            text-align: center;
+            justify-items: center;
+            margin-left: 300px;
+            cursor:pointer ;
+           
+        }
+
+        .link{
+            display:block;
+            justify-content: center;
+        }
+        .message{
+            display:block;
+            justify-content: center; 
+        }
+        h1{
+            text-transform: uppercase;
+            margin-left: 20px;
+        }
+        .text{
+            display:flex;
+            justify-content: space-between;
+        }
+    </style>
+
+</head>
+<body >
+    <div>
+    
+    <form>
+        <h1> GET IN TOUCH </h1>
+        <div class="table">
+        <label for="text"> Tell us your name *</label><br>
+        <label for="email"> Enter your email *</label><br></div>
+        <div class=" text">
+        <input class="one" type="email" placeholder="Enter your name"><br>
+        <input class="two" type="email" placeholder="Enter your email"><br></div>
+        <div class="link">
+        <label for="url"> Your website </label><br> 
+        <input class="three" type="url" placeholder="http//"><br>
+        </div>
+        <div class="message">
+        <label for="text"> Message</label><br>
+        <input class="four" type=" text"><br></div>
+        <div class="submit"> 
+            <input class="btn btn-danger" type="submit">
+
+
+    </form></div>
+</body>
+</html>

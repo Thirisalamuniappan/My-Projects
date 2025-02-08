@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title> survey form</title>
+       <style>
+        body{
+            background-color: aquamarine;
+            margin:10%;
+        }
+        div.survey{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: capitalize;
+        }
+        div.form{
+            background-color: white;
+            padding:30px;
+            display:flex;
+            justify-content: center;
+            
+        }
+        div.heading{
+            text-align: center;
+            text-transform:capitalize;
+        }
+        .pl{
+            background-color: azure;
+          
+        }
+       </style>
+    </head>
+    <body>
+        <div class="survey">
+            <h1> survey form</h1>
+        </div>
+        <div class="form">
+            <form>
+                <div class="heading"><h3>let us know how to improve free code camp </h3></div>
+                <div classs="identity ">
+                    <label class="a" for="name"> * Name:  </label>
+                    <input class="pl" type="text"><br>
+                    </div>
+                 <div class="email"> 
+                    <label class="a" for="email">*Email:  </label>
+                    <input class="pl" type="email"><br>
+                 </div>   
+                 <div class="age">
+                    <label class="a" for="age">*Age: </label>
+                    <input class="pl" type="number"><br>
+                 </div>
+                 <div class="option">
+                    <label for="option"> Which option describes your current role?</label>
+                    
+                    <select>
+                        <option> student</option>
+                        <option> staff</option>
+                        <option>none
+                        </option>
+                    </select>
+                 </div>
+                 <div class="radio">
+                    <label for="radio"> *how likely is that you would recommend freecodecamp to a friend?</label>
+                    
+                    <input type="radio" name="definitely">
+                    <label for="definitely"> definitely</label><br>
+                    <input type="radio" name="definitely">
+                    <label for="Maybe">Maybe</label><br>
+                    <input type="radio" name="definitely">
+                    <label for="Not sure"> Not sure
+                    </label>
+                    <div class="check">
+                        <label for="check"> Thing that should be improved in the future 
+                            (Check all that apply)
+                        </label>
+                        <input type="checkbox" name="front end projects">
+                        <label for="front end"> Front-end-projects</label><br>
+                        <input type="checkbox" name="Back end projects">
+                        <label for="back end"> Back-end-projects</label><br>
+                        <input type="checkbox" name="Data visualization">
+                        <label for="data"> Data visualization</label>
+                        
+
+                
+                    </div>
+                 </div>
+
+                </div>
+
+            </form>
+        </div>
+
+    </body>
+</html>

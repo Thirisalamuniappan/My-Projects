@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Converter</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="converter.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <h2>Celsius to Farenhit Converter</h2>
+      <div class="celsius">
+        <input
+          type="number"
+          id="cels"
+          required
+          placeholder="Enter the value"
+          class="form-control"
+        />
+      </div>
+      <br />
+      <div class="farenhit">
+        <button type="submit" onclick="converter()">Convert</button>
+      </div>
+      <br />
+      <div id="result"></div>
+      <script>
+        function converter() {
+          const value = Number(document.getElementById("cels").value);
+          const faren = (value * 9) / 5 + 32;
+          let result = document.getElementById("result");
+          result.innerHTML = faren + "Farenheit";
+        }
+      </script>
+    </div>
+  </body>
+</html>

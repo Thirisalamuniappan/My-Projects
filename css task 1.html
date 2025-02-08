@@ -1,0 +1,115 @@
+<html>
+    <head ><title> css task 1 </title>
+        <link rel="stylesheet" href="trisha.css">
+    <style>
+        .a{
+            color:rgb(255, 96, 89); font: size 80px;
+        }
+        #d{
+            color:hwb(197 27% 9%); font: 300;
+        }
+        *{
+            text-align: center;
+        }
+        h1,h2{
+             text-align: center;
+        }
+        p{
+            color:hsl(0, 100%, 20%)
+        }
+    
+       
+        ol.custom-list {
+            list-style: none; /* Remove default list styling */
+            counter-reset: list-counter; /* Create a counter for list items */
+            padding-left: 0; /* Remove default padding */
+        }
+
+        ol.custom-list li {
+            counter-increment: list-counter; /* Increment the counter for each list item */
+            position: relative; /* Position the numbers relative to the list item */
+            padding-left: 1em; /* Add padding to make space for the numbers */
+            color: rgb(14, 14, 186); /* Color for the list items */
+        }
+
+        ol.custom-list li::before {
+            content: counter(list-counter) ". "; /* Display the counter followed by a period */
+            color: rgb(211, 82, 22); /* Color for the numbers */
+            position: absolute; /* Position the numbers absolutely */
+            left: 0; /* Align the numbers to the left */
+        }
+        ul.ten li::before {
+            
+            color: rgb(46, 199, 148);/*color for the circle*/
+            
+        }
+        form.one{
+            background-color: azure;
+        }
+        h1.one{
+            background-color:rgb(94, 229, 143) ;
+        }
+        h1.a{
+            border:solid;
+            border-color: brown;
+            text-shadow: 2px 10px 100px red;
+        }
+        h2.z{
+            border-style: double; 
+            border-color: black;border-radius: 9px;
+        }
+    table{
+        background-image: url("photos/trs.webp");
+        background-attachment: fixed;
+        background-position: right;
+    }
+    p{
+        text-align:left;text-decoration: underline;text-indent: 300px;text-transform: capitalize;
+        line-height: 30px;word-spacing: 0.5cm;
+    }
+
+    </style></head>
+    <body>
+        <center> <h1 class="one"> Student details </h1></center>
+        <form class="one">
+            <label style="color: blue;" for="name">name </label>
+            <input  style ="margin: auto;" type="text"><br><br>
+            <label style="color:blue;" for ="age "> age </label>
+            <input type="number"><br><br>
+            <label  style= "color:blue;" for="department"> Department</label>
+            <input type="text"><br><br>
+            <input style="color:brown; border:0cqmax"type="submit"><br><br>
+        </form>
+        <center><h1 class="a"> EDUCATION SYSTEM </h1>
+            <h2 id="d" class="z"> Education </h2></center>
+            <p>
+         Education is a process of learning through which we acquire knowledge. It enlightens, empowers, and creates a positive development. Education gives an individual the knowledge and skills to work with virtue. It aids the all-round mental, physical, and intellectual growth and development of an individual.
+         There are three distinct types of Education- Formal Education, Non-Formal Education, and Informal Education. Education aims to change the way of one’s thinking. Academic knowledge provides one leaning on a global scale, while Practical knowledge is acquired for life on the whole.
+         Education is imparted to all, at various research and academic institutions, imparted by teachers, professors, and trainers.These institutions conduct various curricular activities that aid the overall growth and development of students.
+        Education boosts and develops the commercial scenario as well as benefits the overall economy of the country. Higher the level of education, the better are the chances of development. Therefore, it is highly important to educate the children and youth to live a productive life and help in the development of society and the nation.
+         </p>
+         <br><br>
+         <table id="h" border="1" colspan="3">
+           <tr> <th class="g"> name </th>
+            <th class="g" width="100"> age</th>
+            <th class="g"> department</th></tr>
+            <tr> <td class="o"> Abi</td>
+            <td class="o"> 23</td>
+            <td class="o"> mathematics</td></tr>
+            <tr> <td class="o"> sathya</td>
+            <td class="o"> 24 </td>
+            <td class="o"> Physics </td></tr>
+            </table>
+         <center>
+            <ol class="custom-list">
+                <li>Tamil</li>
+                <li>English</li>
+                <li>Malayalam</li>
+            </ol>
+         <ul class="ten" style="color: blueviolet;" type="circle">
+            <li > history</li>
+            <li> economics </li>
+            <li> psycology </li>
+         </ul></center>
+    </body>
+</html>

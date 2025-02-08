@@ -1,0 +1,25 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #profile-edit-section {
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  .table td, .table th {
+    vertical-align: middle;
+  }
+  
+  button.deactivate-btn {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  button.activate-btn {
+    background-color: #5cb85c;
+    color: white;
+  }
+  

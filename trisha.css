@@ -1,0 +1,19 @@
+.g{
+    color: hsl(160, 76%, 16%);
+}
+ #h{
+    align-content: center;text-align: center;margin-left: 500px;
+ } 
+*{
+    align: center;
+} 
+table{
+    width: 400;height: 400; align-self: center;
+}
+ul,ol{
+    color: rgb(41, 5, 74);margin-left: 600px;margin-right: 800px;
+}
+.o{
+    color:rgba(136, 27, 92, 0.751)
+}
+

@@ -1,0 +1,192 @@
+<html>
+
+<head>
+
+    <title>
+        Javacript tasks
+    </title>
+
+</head>
+
+<body>
+    <center>
+        <h1> WELCOME</h1>
+        <br><br><br><br>
+        <br><br><br>
+        <button onclick="document.getElementById('myimage').src='photos/platewithcake.png'"> Here is your cake </button>
+        <img id="myimage" src="photos/plate.png">
+        <button onclick="document.getElementById('myimage').src='photos/plate.png'"> Your cake is over </button>
+    </center>
+
+
+
+
+    <h1>CLOTHING</h1>
+    <h2> Traditional and Functional Wear</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        // Create an Object:
+        const clothes = {
+            type: "sarees",
+            model: "traditional",
+            color: "pastel",
+            price: "1500",
+            quality: "premium"
+        };
+
+        // Display Data from the Object:
+        document.getElementById("demo").innerHTML =
+            "The sarees color is " + clothes.color + " and the price of the saree is" + clothes.price;
+    </script>
+
+
+
+    <p id="light"></p>
+    <script>
+        let switchstate;
+        let power = 23;
+        if (power == 0) {
+            switchstate = "OFF";
+        }
+        else if (power == 1) {
+            switchstate = "ON";
+        }
+        else {
+            switchstate = "none";
+        }
+
+        document.getElementById("light").innerHTML = switchstate;
+    </script>
+
+    <p id="sky"></p>
+    <script>
+        let color;
+        let colorCode = 2;
+        switch (colorCode) {
+            case 0:
+                color = "red";
+                break;
+            case 1:
+                color = "Green";
+                break;
+            case 2:
+                color = "yellow";
+                break;
+            case 3:
+                color = "violet";
+            default:
+                color = "unknown";
+        }
+
+        document.getElementById("sky").innerHTML = color;
+    </script>
+
+    <p id="text"></p>
+    <script>
+        const company = ["realme", "samsung", "vivo", "iphone", "redme"];
+        let text = "";
+        for (let i = 0; i < company.length; i++) {
+            text += company[i] + "<br>";
+
+        }
+        document.getElementById("text").innerHTML = text;
+    </script>
+
+
+
+
+
+    <p id="vowels"></p>
+    <input id="count" type="text" placeholder="Enter text">
+    <button onclick="getResult()">Get Result</button>
+
+    <script>
+        function countVowels(str) {
+            const vowels = ["a", "e", "i", "o", "u"];
+            let vowelCount = 0;
+
+            for (let i = 0; i < str.length; i++) {
+                if (vowels.includes(str[i].toLowerCase())) {
+                    vowelCount++;
+                }
+            }
+
+            return vowelCount;
+        }
+
+        function getResult() {
+            // Get the value from the input field
+            const inputString = document.getElementById("count").value;
+
+
+
+            // Count the vowels in the input string
+            const result = countVowels(inputString);
+
+            // Display the result
+            document.getElementById("vowels").innerHTML = "Number of vowels: " + result;
+        }
+    </script>
+
+    <p id="star"></p>
+    <script>
+        let pyramid;
+        // Function to print a pyramid of stars
+        function printStarPyramid(rows) {
+            for (let i = 1; i <= rows; i++) {
+                // print spaces before the stars
+                let spaces = ' '.repeat(rows - i);
+                // print stars: 2*i - 1 gives the right number of stars for the current row
+                let stars = '★'.repeat(2 * i - 1);
+                console.log(spaces + stars);
+            }
+        }
+
+        // Call the function to print a pyramid with 5 rows
+        StarPyramid(5);
+       document.getElementById("star").innerHTML=star;
+
+
+    </script>
+
+<script>
+// Function to print a pyramid of numbers
+function printNumberPyramid(rows) {
+    for (let i = 1; i <= rows; i++) {
+        // Print spaces before the numbers
+        let spaces = ' '.repeat(rows - i);
+        
+        // Create the number string for the current row
+        let numbers = '';
+        for (let j = 1; j <= i; j++) {
+            numbers += j + ' ';
+        }
+        
+        // Output the line with spaces and numbers
+        console.log(spaces + numbers.trim());
+    }
+}
+
+// Call the function to print a pyramid with a specified number of rows
+const numberOfRows = 5; // You can change this value
+printNumberPyramid(numberOfRows);
+
+</script>
+
+<p id="one"></p>
+<script>
+    let text="";
+    let i=0;
+    while(i<10){
+        text += "<br>The number is "+ i;
+        i++;
+    }
+    document.getElementById("one").innerHTML= text;
+</script>
+
+
+</body>
+
+</html>

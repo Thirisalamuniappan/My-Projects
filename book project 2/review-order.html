@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Order - Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Review Your Order</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="payment.html">Payment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Customer Information</h2>
+    <div id="customer-info">
+      <p><strong>Full Name:</strong> <span id="review-full-name"></span></p>
+      <p><strong>Email Address:</strong> <span id="review-email"></span></p>
+      <p><strong>Phone Number:</strong> <span id="review-phone"></span></p>
+      <p><strong>Shipping Address:</strong> <span id="review-address"></span></p>
+      <p><strong>City:</strong> <span id="review-city"></span></p>
+      <p><strong>Postal Code:</strong> <span id="review-postal-code"></span></p>
+      <p><strong>Country:</strong> <span id="review-country"></span></p>
+    </div>
+
+    <h3>Your Cart</h3>
+    <div id="cart-summary"></div>
+    <button onclick="window.location.href='payment.html'">Proceed to Payment</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Bookstore</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

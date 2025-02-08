@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Vowels</title>
+</head>
+<body>
+
+    <p id="vowels"></p>
+    <input id="text" type="text" placeholder="Enter text">
+    <button onclick="getResult()">Get Result</button>
+
+    <script>
+        function countVowels(str) {
+            const vowels = ["a", "e", "i", "o", "u"];
+            let vowelCount = 0;
+
+            for (let i = 0; i < str.length; i++) {
+                if (vowels.includes(str[i].toLowerCase())) {
+                    vowelCount++;
+                }
+            }
+
+            return vowelCount;
+        }
+
+        function getResult() {
+            // Get the value from the input field
+            const inputString = document.getElementById("text").value;
+
+            // If the input is empty, display a warning
+            if (!inputString) {
+                document.getElementById("vowels").innerHTML = "Please enter some text!";
+                return;
+            }
+
+            // Count the vowels in the input string
+            const result = countVowels(inputString);
+
+            // Display the result
+            document.getElementById("vowels").innerHTML = "Number of vowels: " + result;
+        }
+    </script>
+
+
+
+
+
+<p id="one"></p>
+<script>
+    let text="";
+    let i=0;
+    while(i<10){
+        text += "<br>The number is "+ i;
+        i++;
+    }
+    document.getElementById("one").innerHTML= text;
+</script>
+
+<p id="two"></p>
+<script>
+    let text="";
+    let i=5;
+    while(i<10){
+        text += "<br>The number is "+ i;
+        i++;
+    }
+    document.getElementById("two").innerHTML= text;
+</script>
+
+
+
+<script>
+    // Function to print a pyramid of numbers
+    function printNumberPyramid(rows) {
+        for (let i = 1; i <= rows; i++) {
+            // Print spaces before the numbers
+            let spaces = ' '.repeat(rows - i);
+            
+            // Create the number string for the current row
+            let numbers = '';
+            for (let j = 1; j <= i; j++) {
+                numbers += j + ' ';
+            }
+            
+            // Output the line with spaces and numbers
+            console.log(spaces + numbers.trim());
+        }
+    }
+    
+    // Call the function to print a pyramid with a specified number of rows
+    const numberOfRows = 5; // You can change this value
+    printNumberPyramid(numberOfRows);
+    
+    </script>
+ 
+ 
+ <div id="pyramid"></div> <!-- Container for the pyramid -->
+    <script>
+        // Function to print a pyramid of numbers
+        function printNumberPyramid(rows) {
+            let output = ""; // Initialize output variable
+            for (let i = 1; i <= rows; i++) {
+                // Print spaces before the numbers
+                let spaces = ' '.repeat(rows - i);
+                
+                // Create the number string for the current row
+                let numbers = '';
+                for (let j = 1; j <= i; j++) {
+                    numbers += j + ' ';
+                }
+                
+                // Append the line with spaces and numbers to the output
+                output += spaces + numbers.trim() + '<br>'; // Use <br> for line break in HTML
+            }
+            document.getElementById("pyramid").innerHTML = output; // Display in the HTML
+        }
+        
+        // Call the function to print a pyramid with a specified number of rows
+        const numberOfRows = 5; // You can change this value
+        printNumberPyramid(numberOfRows);
+    </script>
+    
+</body>
+
+
+</html>
